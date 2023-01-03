@@ -1,0 +1,64 @@
+html
+  padding: 0
+
+body
+  padding: 0
+  margin: 0
+  background: black
+  font-family: 'Roboto', sans-serif
+  font-size: 16px
+  color: white
+  overflow: hidden
+
+.full-site-image
+  background: black
+  img
+    width: 100vw !important
+    height: 100vh !important
+    position: static
+    object-fit: cover
+    opacity: .05
+
+.input-field
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  display: flex
+  flex-direction: column
+  align-items: center
+  .title
+    font-size: 5rem
+    font-weight: 700
+    margin-bottom: 1em
+    color: white
+  #file 
+    opacity: 0
+    width: 0.1px
+    height: 0.1px
+    position: absolute
+  label
+    white-space: nowrap
+    position: relative
+    padding: 10px 24px
+    width: 200px
+    height: 50px
+    border-radius: 25px
+    background: #dfe1f8b4
+    display: flex !important
+    align-items: center
+    justify-content: center
+    color: #fff
+    font-weight: bold
+    cursor: pointer
+    transition: transform .2s ease-out
+
+.results
+  color: white
+  display: none
+  .title
+    border-bottom: 4px solid green
+    font-size: 4rem
+    color: green
+  .row
+    flex-direction: row
